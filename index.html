@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Color Generator</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="box-setiing mb-3" id="color-box">
+            <p class="color-code" id="rgb">rgb(<span id="c-red">0</span>, <span id="c-green">0</span>, <span id="c-blue">0</span>)</p>
+        </div>
+
+        
+        <div class="container mt-5">
+            <div class="row mt-5">
+                <div class="col-4">
+                    <h5 class="horizon-color">RED</h5>
+                    <input type="range" min="0" max="255" value="0" class="slider  horizon-style"
+                    oninput="colorChanger(this.id,event)"
+                    id="horizon-red">
+                    <p class="horizon-color" id="red">0</p>
+                </div>
+                <div class="col-4">
+                    <h5 class="horizon-color">GREEN</h5>
+                    <input type="range" min="0" max="255" value="0" class="slider  horizon-style"
+                    oninput="colorChanger(this.id,event)"
+                    id="horizon-green">
+                    <p class="horizon-color" id="green">0</p>
+                </div>
+                <div class="col-4">
+                    <h5 class="horizon-color">BLUE</h5>
+                    <input type="range" min="0" max="255" value="0" class="slider  horizon-style"
+                    oninput="colorChanger(this.id,event)"
+                    id="horizon-blue">
+                    <p class="horizon-color" id="blue">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
